@@ -161,16 +161,16 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         <div style={styles.logoContainer}>
                             <div>
                                 <p style={styles.green}>
-                                    <b>Heffernan,</b>{' '}
+                                    <b>Daniel Wust,</b>{' '}
                                 </p>
                                 <p style={styles.green}>
-                                    <b>Henry Inc.</b>
+                                    <b>DW Company.</b>
                                 </p>
                             </div>
                         </div>
                         <div style={styles.headerInfo}>
-                            <p>Released: 01/13/2000</p>
-                            <p>HHBIOS (C)2000 Heffernan Henry Inc.,</p>
+                            <p>Released: 01/01/2000</p>
+                            <p>HHBIOS (C)2000 DW Company.,</p>
                         </div>
                     </div>
                     <div style={styles.body} className="loading-screen-body">
@@ -179,7 +179,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                         {showBiosInfo && (
                             <>
                                 <p>HSP Showcase(tm) XX 113</p>
-                                <p>Checking RAM : {14000} OK</p>
+                                <p>Checking RAM : {1024} OK</p>
                                 <div style={styles.spacer} />
                                 <div style={styles.spacer} />
                                 {showLoadingResources ? (
@@ -290,7 +290,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                             <a
                                 style={styles.link}
                                 href={
-                                    'https://github.com/henryjeff/portfolio-website/issues/6'
+                                    'https://github.com/danielwust/portfolio-website/issues/1'
                                 }
                             >
                                 bug in firefox
@@ -314,7 +314,7 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
                             will need to use a different browser.
                         </p>
                         <div style={styles.spacer} />
-                        <p>Thank you - Henry</p>
+                        <p>Thank you - Daniel</p>
                     </div>
                 </div>
             )}
