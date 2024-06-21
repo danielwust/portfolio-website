@@ -38,7 +38,9 @@ const LoadingScreen: React.FC<LoadingProps> = () => {
             start();
         }
         if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+            window.location.href = 'https://os.danielwust.com';
             setFirefoxError(true);
+            return;
         } else if (!detectWebGLContext()) {
             setWebGLError(true);
         } else {

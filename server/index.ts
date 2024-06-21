@@ -29,8 +29,8 @@ app.post('/api/send-email', (req, res) => {
         host: 'smtp.gmail.com',
         port: 587,
         auth: {
-            user: process.env.FOLIO_EMAIL,
-            pass: process.env.FOLIO_PASSWORD,
+            user: process.env.SMTP_EMAIL,
+            pass: process.env.SMTP_PASSWORD,
         },
     });
 
@@ -39,8 +39,8 @@ app.post('/api/send-email', (req, res) => {
         .then(() => {
             transporter
                 .sendMail({
-                    from: `"${name}" <danielwust99.folio@gmail.com>`, // sender address
-                    to: 'danielwust99@gmail.com, danielwust99.folio@gmail.com', // list of receivers
+                    from: `"${name}" <smtp.danielwust@gmail.com>`, // sender address
+                    to: 'contato@danielwust.com, smtp.danielwust@gmail.com', // list of receivers
                     subject: `${name} <${email}> ${
                         company ? `from ${company}` : ''
                     } submitted a contact form`, // Subject line
